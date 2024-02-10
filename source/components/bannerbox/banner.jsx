@@ -83,7 +83,7 @@ const Banner = {
             <img style={{translate: '20px -20px'}} src="/civic.png" className="banner-img"/>
             <div className="wrapper-text">
                 <div>Honda Civic</div>
-                <div>Mulai dari Rp352.500.000</div>
+                <div>Mulai dari Rp616.800.000</div>
             </div>
             <div className="button banner">cek promo</div>
         </div>
@@ -96,7 +96,7 @@ const Banner = {
             <img style={{translate: '-10px -10px'}} src="/accord.png" className="banner-img"/>
             <div className="wrapper-text">
                 <div>Honda Accord</div>
-                <div>Mulai dari Rp352.500.000</div>
+                <div>Mulai dari Rp959.900.000</div>
             </div>
             <div className="button banner">cek promo</div>
         </div>
