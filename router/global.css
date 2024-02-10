@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Quicksand:wght@300..700&display=swap');
+
+* { padding: 0; margin: 0; }
+/* html { background: linear-gradient(to right, var(--primary), var(--background)) ; } */
+
+:root {
+
+    /* COLOR */
+    --black : #0a0a0a;
+    --background : rgb(0, 17, 60);
+    --primary : rgb(16, 110, 178);
+    --second : rgb(24, 75, 130);
+    --text : rgb(225, 225, 225);
+    --white : white;
+    --red : #de555c ;
+    --blue : rgb(111, 190, 255);
+
+
+    /* FONT FAMILY */
+    --mono      : "inconsolata", monospace;
+    --poppins      : "poppins", sans-serif;
+    --quicksand : "quicksand", sans-serif;
+}
+
+::placeholder {
+    text-align: center;
+    color: var(--background);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.page-max {
+    width: 100%;
+    padding: 25px 20px;
+    height: max-content;
+    box-sizing: border-box;
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.950), rgba(30, 30, 30, 0.950));
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 140px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text);
+    font-size: 0.95rem;
+    color: var(--background);
+    font-weight: bold;
+    font-family: var(--quicksand);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.swalert {
+    font-family: var(--quicksand);
+}
+
+.i {
+    color: var(--white);
+    cursor: pointer;
+}
+
+.title {
+    color: var(--white);
+    font-family: var(--quicksand);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.desc {
+    color: rgb(35, 35, 35);
+    font-size: 1.05rem;
+    font-family: var(--quicksand);
+}
+
+span {
+    color: var(--second);
+}
+
+@media (max-width: 450px) {
+    .page-max {
+        padding: 15px 10px;
+    }
+}

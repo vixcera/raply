@@ -1,0 +1,15 @@
+.box-profile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-profile {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    object-fit: cover;
+}

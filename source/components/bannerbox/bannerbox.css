@@ -1,0 +1,195 @@
+.banner-box {
+    width: 600px;
+    height: 350px;
+    box-shadow: 7px 7px 70px var(--black);
+    padding: 30px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.switch {
+    width: 600px;
+    height: 60px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 50px;
+    position: relative;
+    overflow: scroll;
+    align-items: center;
+}
+
+.switch .button { 
+    color: var(--black);
+    font-family: var(--quicksand);
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.switch-container {
+    display: flex;
+    width: max-content;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    overflow: scroll;
+    border-radius: 50px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    width: 600px;
+    height: max-content;
+}
+
+.box {
+    display: flex;
+    width: 100%;
+    height: 130px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 50px var(--black);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.box-img-container {
+    width: 100%;
+    background-color: var(--text);
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.box-img { width: 145px; }
+
+.banner-img {
+    width: 80%;
+    position: absolute;
+    right: -35px;
+    bottom: -20px;
+    animation: slidecar 0.5s ease-in-out;
+    /* filter: drop-shadow(4px 4px 30px var(--black)); */
+}
+@keyframes slidecar {
+    from { translate: 50px 0; }
+}
+
+.box-text-container {
+    height: max-content;
+}
+
+.box-experience, .box-ecare, .box-service, .box-warranty{
+    padding: 15px 20px;
+    position: absolute;
+    z-index: 90;
+    top: 0;
+    left: 0;
+    background-color: var(--text);
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    translate: 0 200px;
+    transition: 0.3s ease-in-out all;
+    overflow: scroll;
+}
+.box-experience.show, .box-ecare.show, .box-service.show, .box-warranty.show { translate: 0 0; }
+
+
+.wrapper-text {
+   display: flex;
+   flex-direction: column;
+   gap: 3px;
+}
+.wrapper-text div:nth-child(1) {
+    color: var(--black);
+    font-family: serif;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    animation: slideother 0.5s ease-in-out;
+}
+.wrapper-text div:nth-child(2) {
+    color: var(--black);
+    font-size: 1.3rem;
+    font-weight: bolder;
+    animation: slideother 0.5s ease-in-out;
+}
+
+.button.banner {
+    margin-top: 25px;
+    box-shadow: 5px 5px 70px var(--black);
+    background-color: var(--black);
+    color: var(--text);
+    animation: slideother 0.5s ease-in-out;
+}
+
+.box-promo {
+    width: 100%;
+    height: max-content;
+    background-color: #aaa;
+    border-radius: 10px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+}
+
+@keyframes slideother {
+    from { translate: -200px 0; }
+}
+
+@media (max-width: 660px) {
+    .switch { width: 530px; }
+    .container { width: 530px; }
+    .banner-box { width: 530px; height: 330px; }
+}
+
+@media (max-width : 590px) {
+    .switch { width: 500px; }
+    .container { width: 500px; }
+    .banner-box { width: 500px; height: 300px; }
+}
+
+@media (max-width: 530px) {
+    .switch{ width: 450px; height: 50px; }
+    .container { width: 450px; }
+    .banner-box { width: 450px; height: 270px; padding: 15px 20px; }
+    .switch-container { justify-content: unset; gap: 10px;}
+    .wrapper-text div:nth-child(1), .wrapper-text div:nth-child(2) { font-size: 1.2rem; }
+}
+
+@media (max-width: 490px) {
+    .switch { width: 410px; }
+    .container { width: 410px; }
+    .banner-box { width: 410px; height: 250px; }
+}
+
+@media (max-width: 440px) {
+    .switch { width: 390px; height: 45px; }
+    .container { width: 390px; }
+    .banner-box { width: 390px; height: 230px; }
+}
+
+@media (max-width: 425px) {
+    .switch { width: 100%; }
+    .container { width: 100%; }
+    .banner-box { width: 100%; }
+    .banner-img { bottom: -30px;}
+    .box { height: 120px; }
+}
+
+@media (max-width: 370px) {
+    .banner-box {
+        height: 210px;
+        padding: 10px 15px;
+    }
+}
