@@ -35,12 +35,12 @@ const Bannerbox = () => {
         {(merk == "Accord") && (<Banner.Accord/>)}
         <div className="switch">
             <div className="switch-container">
-                <div className="button" style={{backgroundColor: 'var(--white)'}} onClick={() => setMerk("HR-V")}>HR-V</div>
-                <div className="button" style={{backgroundColor: '#aaa'}}  onClick={() => setMerk("BR-V")}>BR-V</div>
-                <div className="button" style={{backgroundColor: 'var(--red)'}}  onClick={() => setMerk("WR-V")}>WR-V</div>
-                <div className="button" style={{backgroundColor: 'var(--blue)'}}  onClick={() => setMerk("CR-V")}>CR-V</div>
                 <div className="button" style={{backgroundColor: '#e9e991'}}  onClick={() => setMerk("Brio")}>Brio</div>
+                <div className="button" style={{backgroundColor: 'var(--red)'}}  onClick={() => setMerk("WR-V")}>WR-V</div>
+                <div className="button" style={{backgroundColor: '#aaa'}}  onClick={() => setMerk("BR-V")}>BR-V</div>
+                <div className="button" style={{backgroundColor: 'var(--white)'}} onClick={() => setMerk("HR-V")}>HR-V</div>
                 <div className="button" style={{backgroundColor: '#D65359'}}  onClick={() => setMerk("City")}>City</div>
+                <div className="button" style={{backgroundColor: 'var(--blue)'}}  onClick={() => setMerk("CR-V")}>CR-V</div>
                 <div className="button" style={{backgroundColor: 'var(--white)'}}  onClick={() => setMerk("Civic")}>Civic</div>
                 <div className="button" style={{backgroundColor: '#aaa'}}  onClick={() => setMerk("Accord")}>Accord</div>
             </div>
