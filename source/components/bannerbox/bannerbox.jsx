@@ -137,6 +137,15 @@ const Bannerbox = () => {
                     </div>
                 </div>
             </div>
+            <div className="box-profile">
+                <div className="title" style={{fontSize: '1.8rem',marginTop: '20px'}}>Ramdani</div>
+                <div className="title" style={{fontSize: "1.2rem", color: '#aaa', textAlign: 'center', marginTop: '5px'}}>Sales Consultant - on Honda Sholeh Iskandar</div>
+                <div className="title" style={{fontSize: "1.2rem", textAlign: 'center', marginTop: '30px'}}>BOOKING NOW</div>
+                <div className="title" style={{fontSize: "1.2rem", textAlign: 'center', marginTop: '5px'}}>{`${'0895320141471 ( Dani )'}`}</div>
+                <div className="title" style={{fontSize: "1.2rem", textAlign: 'center', marginTop: '30px'}}>Address</div>
+                <div className="title" style={{fontSize: "1.2rem", color: '#aaa', textAlign: 'center', marginTop: '5px'}}>Jl. Sholeh Iskandar No.27, RT/RW 001/008 Kota Bogor, Kecamatan Tanah Sareal, Kelurahan Kedung Badak, Jawa Barat 16164, Indonesia.</div>
+                <div className="title" style={{fontSize: "0.8rem", color: '#aaa', textAlign: 'center', marginTop: '100px'}}>Copyright © 2024 Ramdani Honda Bogor</div>
+            </div>
         </div>
         </>
     )
