@@ -9,13 +9,16 @@ const Homepage = () => {
     let path = location.pathname
 
     return(
-        <div className="page-max">
-            <Navbar/>
-            <Sidebar/>
-            {(path == '/') && (<Bannerbox/>)}
-            {(path == '/sosmed') && (<Sosmed/>)}
-            {(path == '/tentang') && (<Tentang/>)}
-        </div>
+        <section>
+            <div className="page-max">
+                <Navbar/>
+                <Sidebar/>
+                {(path == '/') && (<Bannerbox/>)}
+                {(path == '/sosmed') && (<Sosmed/>)}
+                {(path == '/tentang') && (<Tentang/>)}
+            </div>
+        </section>
+        
     )
 }
 

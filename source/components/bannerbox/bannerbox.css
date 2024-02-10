@@ -37,6 +37,7 @@
     gap: 15px;
     overflow: scroll;
     border-radius: 50px;
+    animation: slideButton 0.8s ease-in-out;
 }
 .container {
     display: flex;
@@ -46,6 +47,9 @@
     padding-bottom: 10px;
     width: 600px;
     height: max-content;
+}
+@keyframes slideButton {
+    from { translate: -300px 0; }
 }
 
 .box {
@@ -112,17 +116,10 @@
    flex-direction: column;
    gap: 3px;
 }
-.wrapper-text div:nth-child(1) {
-    color: var(--black);
-    font-family: serif;
-    font-size: 1.3rem;
-    font-weight: bolder;
+.wrapper-text h3:nth-child(1) {
     animation: slideother 0.5s ease-in-out;
 }
-.wrapper-text div:nth-child(2) {
-    color: var(--black);
-    font-size: 1.3rem;
-    font-weight: bolder;
+.wrapper-text h3:nth-child(2) {
     animation: slideother 0.5s ease-in-out;
 }
 
